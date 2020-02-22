@@ -19,7 +19,7 @@ server.get('/', (req, res) => {
     res.send('hello your server is workings')
 })
 
-server.get('/api/auth', authRouter)
+server.use('/api/auth', authRouter)
 
 const port = 8000;
 
